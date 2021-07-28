@@ -1,0 +1,79 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Manrope:wght@300;400&family=Poppins:wght@300;500;600&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* Default CSS */
+
+body{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+h1{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  color: #FFFFFF;
+}
+h2{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  color: #000000;
+}
+h3{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  color: #18191F;
+}
+p{
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6C6C6C;
+}
+.cbr-bg-primary{
+  background: #264653;
+}
+.cbr-btn-primary{
+  background: #E76F51;
+  border-radius: 5px;
+  color: #fff;
+  font-weight:100;
+}
+.cbr-btn-primary:hover{
+  background:none;
+  border-radius: 5px;
+  color: #E76F51;
+  border: 1px solid #E76F51;
+  font-weight: 500;
+}
+
+/* Custom CSS */
+
+#mainmenu ul{
+margin-right: 50px;
+}
+#mainmenu ul li a{
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+#mainmenu ul li a:hover{
+  color: #E76F51;
+  font-weight: 500;
+}
