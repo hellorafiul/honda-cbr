@@ -77,3 +77,12 @@ margin-right: 50px;
   color: #E76F51;
   font-weight: 500;
 }
+
+/* Hero Section */
+.hero p{
+  color: #E0E0E0;
+}
+.hero img:hover{
+  transform: translateX(-50px) rotate(-5deg);
+  transition: transform .9s ease-in-out;
+}
