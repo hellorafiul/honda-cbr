@@ -86,3 +86,28 @@ margin-right: 50px;
   transform: translateX(-50px) rotate(-5deg);
   transition: transform .9s ease-in-out;
 }
+
+/* Fetured Bikes Section */
+.fetured-heading p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #E76F51;
+  margin-bottom: -13px;
+}
+.fetured-bike span{
+  border: 1px solid #E76F51;
+  border-radius: 1px;
+  width: 58.5px;
+  text-align: center;
+  display: inline-block;
+}
+.image-gray{
+  filter: grayscale(100%);
+}
+.fetured-bike img:hover{
+  transform: scale(1.1);
+  transition: transform .9s ease-in-out;
+}
