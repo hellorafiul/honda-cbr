@@ -51,7 +51,7 @@ p{
   background: #E76F51;
   border-radius: 5px;
   color: #fff;
-  font-weight:100;
+  font-weight:500;
 }
 .cbr-btn-primary:hover{
   background:none;
@@ -59,8 +59,21 @@ p{
   color: #E76F51;
   border: 1px solid #E76F51;
   font-weight: 500;
+  transition: .4s ease-in-out;
 }
 
+.cbr-btn-secondary{
+  border-radius: 5px;
+  color: #E76F51;
+  border: 1px solid #E76F51;
+  font-weight: 500;
+}
+.cbr-btn-secondary:hover{
+  background: #E76F51;
+  border-radius: 5px;
+  color: #fff;
+  transition: .4s ease-in-out;
+}
 /* Custom CSS */
 
 #mainmenu ul{
@@ -110,4 +123,37 @@ margin-right: 50px;
 .fetured-bike img:hover{
   transform: scale(1.1);
   transition: transform .9s ease-in-out;
+}
+
+/* latest News Section */
+.card{
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  border: none;
+}
+.card:hover{
+  transform: translateY(-10px);
+  transition: transform .5s ease-in-out;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.20);
+}
+.latest-news-bg img:hover{
+  opacity: .9;
+  transition: opacity .5s;
+}
+.latest-news h2{
+  border-bottom: 2px solid #E76F51;
+  display: inline-block;
+  padding: 0px 30px;
+  border-radius: 2px;
+}
+.latest-news a{
+text-decoration: none;
+color: #18191F;
+}
+.latest-news a:hover{
+text-decoration: none;
+color: #E76F51;
+}
+.latest-news span{
+  color: #E76F51;
 }
