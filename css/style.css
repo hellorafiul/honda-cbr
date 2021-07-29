@@ -231,7 +231,6 @@ color: #E76F51;
   list-style: none;
 }
 
-
 /* Shopping CSS */
 .col-item{
     border-radius: 5px;
@@ -242,7 +241,6 @@ color: #E76F51;
     margin: 0 auto;
     width: 100%;
 }
-
 .col-item .info {
   padding: 10px;
   border-radius: 0 0 5px 5px;
