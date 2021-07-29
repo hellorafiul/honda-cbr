@@ -91,7 +91,7 @@ margin-right: 50px;
   font-weight: 500;
 }
 
-/* Hero Section */
+/* Hero Section CSS */
 .hero p{
   color: #E0E0E0;
 }
@@ -100,7 +100,7 @@ margin-right: 50px;
   transition: transform .9s ease-in-out;
 }
 
-/* Fetured Bikes Section */
+/* Fetured Bikes Section CSS */
 .fetured-heading p{
   font-family: Poppins;
   font-style: normal;
@@ -125,7 +125,7 @@ margin-right: 50px;
   transition: transform .9s ease-in-out;
 }
 
-/* latest News Section */
+/* latest News Section CSS */
 .card{
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -158,8 +158,8 @@ color: #E76F51;
   color: #E76F51;
 }
 
-/* Happy Clients Section */
-.happy-client span{
+/* Happy Clients Section CSS */
+.happy-client span, .faq span{
   color: #E76F51;
 }
 .happy-client img{
@@ -201,3 +201,33 @@ color: #E76F51;
   .fa-youtube{
     color: #FF0000;
   }
+
+  /* FAQ Section CSS */
+.cbr-accordian button{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #383838;
+}
+.cbr-accordian p, .cbr-accordian p li{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7E848C;
+}
+.faq img{
+  width: 431px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.accordion-button:not(.collapsed){
+  color: #E76F51;
+}
+.acd li{
+  list-style: none;
+}
