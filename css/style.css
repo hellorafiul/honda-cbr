@@ -168,7 +168,7 @@ color: #E76F51;
   margin-left: auto;
   margin-right: auto;
 }
-.fas, .far{
+.fas, .far, .fa-star, .fa-list, .fa-shopping-cart, .separator a, .price-text-color{
   color: #E76F51;
 }
 .name{
@@ -231,3 +231,70 @@ color: #E76F51;
 .acd li{
   list-style: none;
 }
+
+
+/* Shopping CSS */
+.col-item{
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
+}
+.col-item .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.col-item .info {
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+}
+.col-item:hover{
+    transform: translateY(-10px);
+    transition: transform .5s ease-in-out;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.20);
+}
+.col-item:hover img{
+    transform: scale(.95);
+    transition: transform .5s ease-in-out;
+    opacity: .95;
+}
+
+.product-title h5 {
+  line-height: 20px;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Inter';
+  color: #383838;
+}
+
+.col-item .rating
+{
+    
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+.rating h5{
+  color: #007CFF;
+  font-weight: bold;
+}
+.col-item .separator
+{
+    border-top: 1px solid #E1E1E1;
+}
+
+.col-item .separator p
+{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+.col-item .separator p i
+{
+    margin-right: 5px;
+}
+
+
