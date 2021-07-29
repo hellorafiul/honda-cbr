@@ -75,7 +75,6 @@ p{
   transition: .4s ease-in-out;
 }
 /* Custom CSS */
-
 #mainmenu ul{
 margin-right: 50px;
 }
@@ -297,4 +296,39 @@ color: #E76F51;
     margin-right: 5px;
 }
 
+/* Footer Section CSS */
+footer{
+  background-color: #0B0D17;
 
+}
+.footer-menu a{
+  color: white;
+  text-decoration: none;
+  font-family: Manrope;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 12px 20px 12px 0px;
+}
+.footer-menu a:hover{
+color: #E76F51; 
+}
+.footer-menu p{
+  font-family: Manrope;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+}
+.footer-right p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+.footer-social > a{
+  padding:0px;
+}
+.footer-right img{
+width: 135px;
+}

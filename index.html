@@ -39,21 +39,49 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shop</a>
+              <a class="nav-link" href="#shop">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
+              <a class="nav-link" href="#news">News</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
           <form class="d-flex">
-            <button class="btn cbr-btn-primary px-4" type="button">Login</button>
+            <button class="btn cbr-btn-primary px-4" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo">Login</button>
           </form>
         </div>
       </div>
     </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Enter Your Login Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group my-3">
+                <input type="email" class="form-control form-control" placeholder="Email">
+              </div>
+              <div class="form-group my-3">
+                <input type="password" class="form-control form-control" placeholder="Password">
+              </div>
+              <button type="submit" class="btn cbr-btn-primary btn-block w-100" data-bs-dismiss="modal">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
     <!-- Hero Section -->
     <section class="hero container py-5">
@@ -64,12 +92,12 @@
           <p class="pt-2">Amet minim mollit non deserunt ullamco est sit <br> aliqua dolor do amet sint. Velit officia
             consequat duis
             enim velit <br> mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+          <button type="button" data-bs-toggle="modal" data-bs-target="#PurchaseModal" data-bs-whatever="@mdo"
             class="btn cbr-btn-primary px-5">Purchase</button>
         </div>
 
         <!-- Purchase Button Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="PurchaseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -123,8 +151,8 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Register Now</button>
+                <button type="button" class="btn cbr-btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn cbr-btn-primary" data-bs-dismiss="modal">Register Now</button>
               </div>
             </div>
           </div>
@@ -160,7 +188,7 @@
     </section>
 
     <!-- latest News Section -->
-    <section class="latest-news container py-5 mt-3">
+    <section id="news" class="latest-news container py-5 mt-3">
       <div class="text-center py-4 mb-4">
         <h2>Latest News</h2>
       </div>
@@ -178,7 +206,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laboriosam?</p>
             </div>
             <div class="d-flex card-footer border-0 bg-white pb-3 justify-content-between align-items-center">
-              <button type="button" class="btn cbr-btn-primary px-5">Read More</button>
+              <button type="button" class="btn cbr-btn-primary px-sm-5">Read More</button>
               <small class="text-muted">Last updated <span>July 29</span></small>
             </div>
           </div>
@@ -196,7 +224,7 @@
               <p>Lorem ipsum dolor sit, amet. Commodi assumenda esse animi!</p>
             </div>
             <div class="d-flex card-footer border-0 bg-white pb-3 justify-content-between align-items-center">
-              <button type="button" class="btn cbr-btn-secondary px-5">Read More</button>
+              <button type="button" class="btn cbr-btn-secondary px-sm-5">Read More</button>
               <small class="text-muted">Last updated <span>June 13</span></small>
             </div>
           </div>
@@ -214,7 +242,7 @@
               <p>Lorem ipsum dolor, sit amet adipisicing elit. Repellat eaque ad officia id nisi lec</p>
             </div>
             <div class="d-flex card-footer border-0 bg-white pb-3 justify-content-between align-items-center">
-              <button type="button" class="btn cbr-btn-secondary px-5">Read More</button>
+              <button type="button" class="btn cbr-btn-secondary px-sm-5">Read More</button>
               <small class="text-muted">Last updated <span>Feb 20</span></small>
             </div>
           </div>
@@ -225,12 +253,12 @@
     </section>
 
     <!-- Happy Clients Section -->
-    <section class="happy-client container py-5 mt-3">
+    <section class="happy-client container py-sm-5 mt-3">
       <div class="text-center py-4 mb-4">
         <h2>Happy <span>Clients says</span></h2>
       </div>
 
-      <div class="row row-cols-1 row-cols-lg-4 g-4 justify-content-center">
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4 justify-content-center">
         <!-- Single client Card -->
         <div class="col">
           <div class="card h-100 text-center">
@@ -424,7 +452,7 @@
     </section>
 
     <!-- Shopping Section -->
-    <section class="shopping happy-client container py-4 mt-3">
+    <section id="shop" class="shopping happy-client container py-4 mt-3">
       <div class="text-center py-4 mb-4">
         <h2><span>Shop</span> With Us</h2>
       </div>
@@ -433,7 +461,7 @@
         <div class="item px-3">
           <div class="row py-3">
             <!-- Single Product -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-4 mb-lg-0">
               <div class="col-item">
                 <div class="photo">
                   <img src="images/product1.jpg" class="img-fluid" alt="a" />
@@ -468,7 +496,7 @@
               </div>
             </div>
             <!-- Single Product -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-4 mb-lg-0">
               <div class="col-item">
                 <div class="photo">
                   <img src="images/product2.jpg" class="img-fluid" alt="a" />
@@ -503,7 +531,7 @@
               </div>
             </div>
             <!-- Single Product -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-4 mb-lg-0">
               <div class="col-item">
                 <div class="photo">
                   <img src="images/product3.jpg" class="img-fluid" alt="a" />
@@ -538,7 +566,7 @@
               </div>
             </div>
             <!-- Single Product -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-4 mb-lg-0">
               <div class="col-item">
                 <div class="photo">
                   <img src="images/product4.jpg" class="img-fluid" alt="a" />
@@ -581,7 +609,7 @@
         <div class="item px-3">
           <div class="row py-3">
             <!-- Single Product -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-4 mb-lg-0">
               <div class="col-item">
                 <div class="photo">
                   <img src="images/product5.jpg" class="img-fluid" alt="a" />
@@ -616,7 +644,7 @@
               </div>
             </div>
             <!-- Single Product -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-4 mb-lg-0">
               <div class="col-item">
                 <div class="photo">
                   <img src="images/product6.jpg" class="img-fluid" alt="a" />
@@ -651,7 +679,7 @@
               </div>
             </div>
             <!-- Single Product -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-4 mb-lg-0">
               <div class="col-item">
                 <div class="photo">
                   <img src="images/product7.jpg" class="img-fluid" alt="a" />
@@ -759,6 +787,48 @@
     </section>
   </main>
 
+  <!-- Footer Section -->
+  <footer class="">
+    <div class="container footer-area">
+      <div class="row d-flex justify-content-between align-items-start py-5">
+        <div class="col-md-7 footer-menu align-items-end">
+          <div>
+            <a href="">Download Now</a>
+            <a href="">License</a>
+          </div>
+          <div class="footer-menu py-2">
+            <a href="">About</a>
+            <a href="">Features</a>
+            <a href="">Pricing</a>
+            <a href="">Careers</a>
+            <a href="">Help</a>
+            <a href="">Privacy Policy</a>
+          </div>
+          <div class="footer-social d-md-block d-none">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+          <p class="pt-4 d-md-block d-none">&copy; 2021 Bike. All rights reserved</p>
+        </div>
+        <div class="col-md-4 d-lg-grid justify-content-end footer-right mt-4 mt-sm-0">
+          <p class="text-white">Get the App</p>
+          <a href=""><img src="images/App Store Badge.png" class="d-block pb-3" alt=""></a>
+          <a href=""><img src="images/Google Play Badge.png" alt=""></a>
+        </div>
+        <div class="footer-social d-md-none pt-4">
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="d-md-none pt-4">&copy; 2021 Bike. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- BootStrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
